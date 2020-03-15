@@ -4,6 +4,8 @@
 
 .content {
   max-width: 1000px;
+  max-height: fit-content;
+  overflow-y: hidden;
 }
 
 body {
@@ -11,7 +13,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30% auto 60px;
+  grid-template-rows: 30% 62% 8%;
   grid-template-areas:
     "header header"
     "main main"
@@ -75,11 +77,20 @@ footer {
   color: blue;
 }
 
+blockquote b {
+  font-size: 25px;
+}
+
+b:hover {
+  font-size: 20px;
+  color: blue;
+}
+
 #greeting {
   justify-content: center;
   font-size: 60px;
   font-weight: 500;
-  margin: 30px;
+  margin: 40px;
 }
 
 #description {
