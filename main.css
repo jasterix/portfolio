@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  max-height: 100%;
+  overflow-y: hidden;
 }
 
 .content {
@@ -13,7 +15,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30% 62% 8%;
+  grid-template-rows: 30% auto 20px;
   grid-template-areas:
     "header header"
     "main main"
@@ -24,11 +26,10 @@ header,
 aside,
 main,
 footer {
-  padding: 16px;
   text-align: center;
 }
 ul {
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 /* original 1080x360 */
@@ -56,18 +57,20 @@ footer {
 
 .navigation-list {
   list-style: none;
-  padding: 0;
+  /* padding: 0; */
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  /* height: fit-content; */
 }
 
 .navigation-item a {
   text-decoration: none;
   color: black;
   margin: 0 10px;
-  padding: 15px;
+  /* padding: 15px; */
   width: auto;
   border: solid 1px blue;
 }
