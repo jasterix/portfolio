@@ -15,7 +15,7 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 30% auto 20px;
+  grid-template-rows: 30% auto 60px;
   grid-template-areas:
     "header header"
     "main main"
