@@ -35,6 +35,7 @@ ul {
 /* original 1080x360 */
 header {
   background: url("images/springHeader.jpeg");
+  width: 100%;
   background-repeat: no-repeat;
   background-size: initial;
   grid-area: header;
