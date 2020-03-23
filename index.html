@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header></header>
-
+    <header>
+        <picture>
+          <source srcset="images/springHeader.jpeg"
+                  media="(width: 960px)">
+          <img src="images/springHeader.jpeg" />
+      </picture>
+    </header>
     <main>
-      <div>
-        <p id="greeting">Hi, I'm Loune</p>
-        <blockquote id="description">
-            <font class="textChange" size: "0px;"> <b>investment banker</b></font> / <font class="textChange" size: "0px;"> <b>consultant</b></font> turned <font class="textChange" size: "0px;"> <b>startup founder</b></font> turned
+      <article>
+        <h1 id="greeting">Hi, I'm Loune</h1>
+        <p>
+          <font class="textChange" size: "0px;"> <b>investment banker</b></font> / <font class="textChange" size: "0px;"> <b>consultant</b></font> turned <font class="textChange" size: "0px;"> <b>startup founder</b></font> turned
           <b>fullstack developer</b>. <br />I've always been passionate about
           creating solutions to urgent problems
-        </blockquote>
-      </div>
+        </p>
       <h2>
         <ul class="navigation-list">
+          <div>
           <li class="navigation-item">
             <a href="https://dev.to/jasterix">Blog</a>
           </li>
+        </div>
           <li class="navigation-item">
             <a href="https://github.com/jasterix">Github</a>
           </li>
@@ -36,12 +42,11 @@
             <a
               href="mailto:loune.calixte@gmail.com?Subject=Hello%20again"
               target="_top"
-            >
-              Email</a
-            >
+            >Email</a>
           </li>
         </ul>
       </h2>
+    </article>
     </main>
     <footer>
       <ul class="navigation-list"></ul>
