@@ -1,11 +1,7 @@
 * {
   box-sizing: border-box;
-  /* max-height: 100%; */
 }
-html {
-  /* width: 80%;
-  margin: 0 auto; */
-}
+
 body {
   font-family: sans-serif;
   margin: 0 auto;
@@ -27,15 +23,12 @@ footer {
 
 /* original 1080x360 */
 header {
-  /* background: url("images/springHeader.jpeg"); */
-
   background-repeat: no-repeat;
   background-size: initial;
   grid-area: header;
   resize: both;
   overflow: scroll;
   background-position: center;
-  /* width: 100%; */
 }
 
 main {
@@ -56,6 +49,7 @@ a {
 .navigation-item a:hover,
 .navigation-item a:active {
   color: blue;
+  cursor: pointer;
 }
 
 b:hover {
@@ -65,7 +59,7 @@ b:hover {
 
 h1 {
   justify-content: center;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 500;
 }
 
@@ -75,28 +69,31 @@ h2 {
   line-height: 4rem;
 }
 
+h3 {
+  font-size: 3rem;
+  line-height: 1.7em;
+  font-weight: 500;
+}
+
 a {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 }
 
 article {
   justify-content: center;
-  font-size: 1.5rem;
-  line-height: 1.7em;
-  font-weight: 500;
 }
 
 li.navigation-item {
-  color: black;
   list-style: none;
   margin: 0;
-  border: solid 1px blue;
+  border: solid 2px black;
+  background-color: deepskyblue;
   width: 80%;
   margin: 2% auto;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   .navigation-list {
     list-style: none;
     margin: 0;
@@ -107,16 +104,27 @@ li.navigation-item {
   }
   li.navigation-item {
     text-decoration: none;
-    color: black;
-    margin: 0 10px;
+    margin: 5px;
     padding: 15px;
     width: auto;
     border: solid 1px blue;
+    background-color: white;
     width: 80%;
     height: auto;
   }
+  h1 {
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
 
-  /* li.navigation-item {
-    width: 180px;
-  } */
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.7em;
+    font-weight: 500;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+  }
 }
